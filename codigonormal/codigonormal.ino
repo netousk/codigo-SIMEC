@@ -60,8 +60,8 @@
     double potencia = corrente*tensao;
 
 //esp8266
-    const char* ssid = "81324VCT6_2.4G";//nome wifi
-    const char* password = "03851972252";//senha wifi
+    const char* ssid = "NOME DA REDE WIFI";//nome wifi
+    const char* password = "SENHA";//senha wifi
     String blocosup = "blocosup" ;
 
 //RTC
@@ -187,9 +187,8 @@ void loop() {
     Serial.print(potencia);
     Serial.println(" W");
 
-    double consumo = (potencia/1000);
-    Serial.print("consumo atual = ");
-    Serial.print(consumo);
+    Serial.print("consumo = ");
+    Serial.print(consumokwh);
     Serial.println(" kWh");
     
 //minutos do dia    
